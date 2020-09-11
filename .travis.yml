@@ -8,7 +8,7 @@ addons:
             - ant 
     sonarcloud:
         organization: simonesinceri
-        token: 23e3e8e5a32633f02eb788d98fd7f55dc85ac9e0
+        token: ef1888c771ec52da6e36077c4c4d7a142af5cd93
         
 script:
     - ant build
