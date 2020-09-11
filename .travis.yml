@@ -1,0 +1,14 @@
+language: java
+jdk:
+- openjdk8
+
+addons:
+    apt:
+        packages:
+            - ant 
+    sonarcloud:
+        organization: simonesinceri
+        token:  12aa35559cf5e2daa191938219ff2d38668ac1d2
+script:
+    - ant build
+    - sonar-scanner
