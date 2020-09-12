@@ -1,3 +1,4 @@
+dist: xenial
 language: java
 jdk:
 - openjdk8
@@ -8,8 +9,7 @@ addons:
             - ant 
     sonarcloud:
         organization: simonesinceri
-        token: 
-            secure:"bef81524fc1b8e8ba4e1fb1e5d483b0252416306"
+        token: bef81524fc1b8e8ba4e1fb1e5d483b0252416306
 script:
     - ant build
     - sonar-scanner
